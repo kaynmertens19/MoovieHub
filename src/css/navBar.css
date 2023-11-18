@@ -1,0 +1,109 @@
+/* NavBar.css */
+
+
+.navbar {
+    background-color: #cec8c8;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+  }
+  
+ 
+  .logo img {
+    max-width: 50px;
+  }
+  
+  
+  .title h1 {
+    margin: 0;
+    font-size: 20px; 
+  }
+  
+ 
+  .search-bar {
+    display: flex; 
+    margin: 0 20px;
+  }
+  
+
+  .search-bar input[type="text"] {
+    flex: 1; 
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+ 
+  .search-bar button {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+  .modal-button button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+
+  .modal-content {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .modal button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+
+  @media (max-width: 768px) {
+
+    .navbar {
+      padding: 10px;
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  }
