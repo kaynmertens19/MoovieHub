@@ -1,18 +1,22 @@
 
 
 import { useAuth0 } from "@auth0/auth0-react"
+import "../css/login.css"
 
-
-function Login(){
-    const {loginWithRedirect} = useAuth0()
+function Login() {
+    const { loginWithRedirect } = useAuth0();
+  
     return (
-        <>
-        <h1>Vite + react + login</h1>
+      <div className="login-container">
         <div className="card">
-            <button onClick={():Promise<void>=> loginWithRedirect()}>Login</button>
-        </div>
-        </>
-    )
-}
+          <h1>Moovie Hub project</h1>
+          <div className="button-container">
+          <button className="neon-button" onClick={(): Promise<void> => loginWithRedirect()}>Login</button>
 
-export default Login
+          </div>
+        </div>
+      </div>
+    );
+  }
+  
+  export default Login;

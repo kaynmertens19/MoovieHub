@@ -1,0 +1,105 @@
+/* Add background to the entire page */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b78888; /* Set your desired background color */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Center the content vertically and horizontally */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Styling for the login card */
+  .card {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.2));
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    width: 80%; /* Adjust the width as needed */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Set your desired text color */
+  }
+  
+ /* Neon button styles */
+.neon-button {
+    background-color: transparent;
+    color: #0f9378; /* Neon color */
+    border: 2px solid #0e6453; /* Neon color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .modal-button{
+    
+        background-color: transparent;
+        color: #ffffff; /* Neon color */
+        border-radius: 5px;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+      
+  }
+
+  .neon-button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #00ffcc, #ff99cc, #00ffcc); /* Neon gradient */
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .neon-button:hover {
+    color: #ffffff; /* Neon color on hover */
+    border-color: #ff99cc; /* Neon color on hover */
+    background-color: #b78888;
+  }
+  
+  .neon-button:hover::before {
+    left: 100%;
+  }
+  
+  .modal-button::before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    background: linear-gradient(45deg, #00ffcc, #ff99cc, #00ffcc); /* Neon gradient */
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .modal-button:hover {
+    color: #ffffff; /* Neon color on hover */
+    border-color: #ff99cc; /* Neon color on hover */
+    background-color: #b78888;
+  }
+  
+  .modal-button:hover::before {
+    left: 100%;
+  }
+
