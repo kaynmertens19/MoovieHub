@@ -1,4 +1,3 @@
-// src/components/MovieModal.tsx
 
 import React, { useState } from 'react';
 import "../css/modal.css"
@@ -72,7 +71,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ isOpen, onClose, onCreateMovie 
         const newMovie = await response.json();
         console.log('Movie created:', newMovie);
         
-        // Call the onCreateMovie callback to update the parent component's movies state
+        
         onCreateMovie(newMovie);
       } else {
         const errorMessage = await response.text();
@@ -120,8 +119,8 @@ const MovieModal: React.FC<MovieModalProps> = ({ isOpen, onClose, onCreateMovie 
               onChange={handleInputChange}
               inputMode="numeric"
               required
-              min="0" // Minimum score value
-              max="10" // Maximum score value
+              min="0" 
+              max="10" 
             />
           </label>
           <label>
